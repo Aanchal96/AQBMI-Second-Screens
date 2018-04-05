@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SectionsHeaderCellID" id="0rc-6H-iNN" customClass="SectionsHeaderCell" customModule="AQBMI_II" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="584" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on checkbox to allow to share." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBj-vy-uA6">
+                    <rect key="frame" x="15" y="36.5" width="172.5" height="14"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHG-Bk-9cZ">
+                    <rect key="frame" x="15" y="15" width="60" height="17"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-YK-MXY">
+                    <rect key="frame" x="553" y="15.5" width="16" height="16"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="c9Q-HU-XFb"/>
+                        <constraint firstAttribute="height" constant="16" id="k6U-dz-oQE"/>
+                    </constraints>
+                    <connections>
+                        <action selector="checkBtn:" destination="0rc-6H-iNN" eventType="touchUpInside" id="1Ch-fA-fxH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OeR-xT-ZfT" firstAttribute="trailing" secondItem="xDM-YK-MXY" secondAttribute="trailing" constant="15" id="1zB-r8-qal"/>
+                <constraint firstItem="mHG-Bk-9cZ" firstAttribute="top" secondItem="OeR-xT-ZfT" secondAttribute="top" constant="15" id="9ph-4E-kOu"/>
+                <constraint firstItem="jBj-vy-uA6" firstAttribute="leading" secondItem="mHG-Bk-9cZ" secondAttribute="leading" id="Rvi-pT-Ssf"/>
+                <constraint firstItem="xDM-YK-MXY" firstAttribute="centerY" secondItem="mHG-Bk-9cZ" secondAttribute="centerY" id="k9L-Nj-DPL"/>
+                <constraint firstItem="mHG-Bk-9cZ" firstAttribute="leading" secondItem="OeR-xT-ZfT" secondAttribute="leading" constant="15" id="oBR-CT-HBj"/>
+                <constraint firstItem="jBj-vy-uA6" firstAttribute="top" secondItem="mHG-Bk-9cZ" secondAttribute="bottom" constant="5" id="xt0-dC-dwz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="OeR-xT-ZfT"/>
+            <connections>
+                <outlet property="checkBtn" destination="xDM-YK-MXY" id="hng-19-cIp"/>
+                <outlet property="descriptionLabel" destination="jBj-vy-uA6" id="Eqj-xH-qDp"/>
+                <outlet property="titleLabel" destination="mHG-Bk-9cZ" id="ADJ-qe-dDV"/>
+            </connections>
+            <point key="canvasLocation" x="430" y="-310"/>
+        </view>
+    </objects>
+</document>

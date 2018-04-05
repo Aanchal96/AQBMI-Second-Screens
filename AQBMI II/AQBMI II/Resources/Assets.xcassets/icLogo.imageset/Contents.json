@@ -1,0 +1,23 @@
+{
+  "info" : {
+    "author" : "zeplin",
+    "version" : 1
+  },
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "icLogo.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "icLogo@2x.jpg",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "icLogo@3x.jpg",
+      "scale" : "3x"
+    }
+  ]
+}
