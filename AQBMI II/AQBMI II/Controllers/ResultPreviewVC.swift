@@ -28,9 +28,9 @@ class ResultPreviewVC: UIViewController {
     }
     
     override var preferredStatusBarStyle : UIStatusBarStyle {
-        //        let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
-        //        statusBarView.backgroundColor = AppColors.darkGreyFourColor
-        //        view.addSubview(statusBarView)
+                let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
+                statusBarView.backgroundColor = AppColors.darkGreyFourColor
+                view.addSubview(statusBarView)
         return UIStatusBarStyle.lightContent
     }
     
@@ -131,7 +131,7 @@ extension ResultPreviewVC: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
         case 0:
-            return 128
+            return 108
             
         default:
             return 65

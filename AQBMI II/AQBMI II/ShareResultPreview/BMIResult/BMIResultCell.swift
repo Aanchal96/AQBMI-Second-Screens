@@ -56,7 +56,7 @@ extension BMIResultCell{
         self.bodyFatLabel.font = AppFonts.Poppins_Regular.withSize(15.0)
         self.bodyFatLabel.textColor = AppColors.coolGreyTwoColor
     }
+    
     func populateData(index : IndexPath) {
-        
     }
 }

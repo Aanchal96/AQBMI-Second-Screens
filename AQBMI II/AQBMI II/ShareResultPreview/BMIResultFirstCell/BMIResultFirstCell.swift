@@ -17,8 +17,6 @@ class BMIResultFirstCell: UITableViewHeaderFooterView {
     
     //MARK:--> IBActions
     //==================
-    @IBAction func crossBtn(_ sender: Any) {
-    }
     
     //MARK:--> Cell life cycle
     //========================

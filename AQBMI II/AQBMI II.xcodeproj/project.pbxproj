@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CC493B42077477200909E19 /* OtherStatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC493B22077477200909E19 /* OtherStatsTableViewCell.swift */; };
+		0CC493B52077477200909E19 /* OtherStatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC493B32077477200909E19 /* OtherStatsTableViewCell.xib */; };
+		0CC493B7207756C100909E19 /* ResultBMIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC493B6207756C100909E19 /* ResultBMIVC.swift */; };
+		0CC493BD207776AD00909E19 /* ResultBMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC493BC207776AD00909E19 /* ResultBMI.swift */; };
+		0CC493BF207776BB00909E19 /* ResultBodyFat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC493BE207776BB00909E19 /* ResultBodyFat.swift */; };
+		0CC493C420778C4D00909E19 /* TipsHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC493C320778C4D00909E19 /* TipsHeaderCell.xib */; };
+		0CC493C820778DEB00909E19 /* TipsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC493C720778DEB00909E19 /* TipsHeaderCell.swift */; };
 		0CCA09DF20749FA8008981AE /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA09DE20749FA8008981AE /* ScreenSize.swift */; };
 		0CCA09E12074A67B008981AE /* ResultPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA09E02074A67B008981AE /* ResultPreviewVC.swift */; };
 		0CCA09E72074BA3A008981AE /* BMIResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA09E52074BA3A008981AE /* BMIResultCell.swift */; };
@@ -47,6 +54,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CC493B22077477200909E19 /* OtherStatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherStatsTableViewCell.swift; sourceTree = "<group>"; };
+		0CC493B32077477200909E19 /* OtherStatsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherStatsTableViewCell.xib; sourceTree = "<group>"; };
+		0CC493B6207756C100909E19 /* ResultBMIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIVC.swift; sourceTree = "<group>"; };
+		0CC493BC207776AD00909E19 /* ResultBMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMI.swift; sourceTree = "<group>"; };
+		0CC493BE207776BB00909E19 /* ResultBodyFat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBodyFat.swift; sourceTree = "<group>"; };
+		0CC493C320778C4D00909E19 /* TipsHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsHeaderCell.xib; sourceTree = "<group>"; };
+		0CC493C720778DEB00909E19 /* TipsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsHeaderCell.swift; sourceTree = "<group>"; };
 		0CCA09DE20749FA8008981AE /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
 		0CCA09E02074A67B008981AE /* ResultPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPreviewVC.swift; sourceTree = "<group>"; };
 		0CCA09E52074BA3A008981AE /* BMIResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIResultCell.swift; sourceTree = "<group>"; };
@@ -99,6 +113,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CC493B12077474800909E19 /* OtherStatsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0CC493B22077477200909E19 /* OtherStatsTableViewCell.swift */,
+				0CC493B32077477200909E19 /* OtherStatsTableViewCell.xib */,
+			);
+			path = OtherStatsTableViewCell;
+			sourceTree = "<group>";
+		};
+		0CC493B8207756DA00909E19 /* Formats */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA09FB2074CF2B008981AE /* Fonts */,
+				0CF4E5042073653100ACD2C9 /* AppColors.swift */,
+				0CF4E5052073653100ACD2C9 /* AppFonts.swift */,
+			);
+			path = Formats;
+			sourceTree = "<group>";
+		};
+		0CC493B92077761300909E19 /* ResultBMI */ = {
+			isa = PBXGroup;
+			children = (
+				0CC493C020778A8300909E19 /* Result BMI  */,
+				0CC493C120778A9200909E19 /* Result Body Fat */,
+				0CC493C220778AA200909E19 /* Tips Header */,
+			);
+			path = ResultBMI;
+			sourceTree = "<group>";
+		};
+		0CC493C020778A8300909E19 /* Result BMI  */ = {
+			isa = PBXGroup;
+			children = (
+				0CC493BC207776AD00909E19 /* ResultBMI.swift */,
+			);
+			path = "Result BMI ";
+			sourceTree = "<group>";
+		};
+		0CC493C120778A9200909E19 /* Result Body Fat */ = {
+			isa = PBXGroup;
+			children = (
+				0CC493BE207776BB00909E19 /* ResultBodyFat.swift */,
+			);
+			path = "Result Body Fat";
+			sourceTree = "<group>";
+		};
+		0CC493C220778AA200909E19 /* Tips Header */ = {
+			isa = PBXGroup;
+			children = (
+				0CC493C720778DEB00909E19 /* TipsHeaderCell.swift */,
+				0CC493C320778C4D00909E19 /* TipsHeaderCell.xib */,
+			);
+			path = "Tips Header";
+			sourceTree = "<group>";
+		};
 		0CCA09E22074B8BF008981AE /* BMIResult */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +181,7 @@
 			children = (
 				0CCA09E92074BA93008981AE /* OtherStatsCell.swift */,
 				0CCA09EA2074BA93008981AE /* OtherStatsCell.xib */,
+				0CC493B12077474800909E19 /* OtherStatsTableViewCell */,
 			);
 			path = OtherPlatformStats;
 			sourceTree = "<group>";
@@ -138,8 +207,8 @@
 		0CCA09F02074BC73008981AE /* ShareBar */ = {
 			isa = PBXGroup;
 			children = (
-				0CCE3F8720764ECF006FEF32 /* ShareBarCell.xib */,
 				0CCE3F8920764F2C006FEF32 /* ShareBarCell.swift */,
+				0CCE3F8720764ECF006FEF32 /* ShareBarCell.xib */,
 			);
 			path = ShareBar;
 			sourceTree = "<group>";
@@ -238,8 +307,10 @@
 				0CF4E4FC207352A600ACD2C9 /* BMIHistory */,
 				0CF4E51220739DC500ACD2C9 /* SurveyHistory */,
 				0CCA09F12074BC8D008981AE /* ShareResultPreview */,
+				0CC493B92077761300909E19 /* ResultBMI */,
 				0CF4E501207356D000ACD2C9 /* Controllers */,
 				0CF4E50920736FFA00ACD2C9 /* View */,
+				0CC493B8207756DA00909E19 /* Formats */,
 				0CF4E5022073651000ACD2C9 /* Model */,
 				0CCE3F652075F303006FEF32 /* Resources */,
 				0CF4E4E7207348AC00ACD2C9 /* AppDelegate.swift */,
@@ -263,6 +334,7 @@
 				0CF4E4E9207348AC00ACD2C9 /* BMIHistoryVC.swift */,
 				0CF4E51020739CF900ACD2C9 /* SurveyHistoryVC.swift */,
 				0CCA09E02074A67B008981AE /* ResultPreviewVC.swift */,
+				0CC493B6207756C100909E19 /* ResultBMIVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,9 +342,6 @@
 		0CF4E5022073651000ACD2C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0CCA09FB2074CF2B008981AE /* Fonts */,
-				0CF4E5042073653100ACD2C9 /* AppColors.swift */,
-				0CF4E5052073653100ACD2C9 /* AppFonts.swift */,
 				0CF4E5032073653100ACD2C9 /* CornerRadius.swift */,
 				0CCA09DE20749FA8008981AE /* ScreenSize.swift */,
 			);
@@ -359,6 +428,7 @@
 				0CF4E4F5207348AC00ACD2C9 /* LaunchScreen.storyboard in Resources */,
 				0CCA09E82074BA3A008981AE /* BMIResultCell.xib in Resources */,
 				0CCE3F6820760872006FEF32 /* BMIResultFirstCell.xib in Resources */,
+				0CC493B52077477200909E19 /* OtherStatsTableViewCell.xib in Resources */,
 				0CCA0A052074CF2B008981AE /* Poppins-SemiBold.ttf in Resources */,
 				0CCA0A012074CF2B008981AE /* Poppins-Bold.ttf in Resources */,
 				0CCE3F7C20763362006FEF32 /* TipsInnerTableViewCell.xib in Resources */,
@@ -371,6 +441,7 @@
 				0CF4E4F2207348AC00ACD2C9 /* Assets.xcassets in Resources */,
 				0CCE3F732076225E006FEF32 /* TipsCell.xib in Resources */,
 				0CF4E4ED207348AC00ACD2C9 /* Main.storyboard in Resources */,
+				0CC493C420778C4D00909E19 /* TipsHeaderCell.xib in Resources */,
 				0CCA0A042074CF2B008981AE /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,12 +455,15 @@
 			files = (
 				0CCA09F82074BDF5008981AE /* BodyImproveCell.swift in Sources */,
 				0CCE3F722076225E006FEF32 /* TipsCell.swift in Sources */,
+				0CC493BD207776AD00909E19 /* ResultBMI.swift in Sources */,
 				0CCE3F7B20763362006FEF32 /* TipsInnerTableViewCell.swift in Sources */,
 				0CCA09DF20749FA8008981AE /* ScreenSize.swift in Sources */,
 				0CCA09E72074BA3A008981AE /* BMIResultCell.swift in Sources */,
+				0CC493C820778DEB00909E19 /* TipsHeaderCell.swift in Sources */,
 				0CF4E4F0207348AC00ACD2C9 /* AQBMI_II.xcdatamodeld in Sources */,
 				0CF4E51120739CF900ACD2C9 /* SurveyHistoryVC.swift in Sources */,
 				0CCE3F76207627D8006FEF32 /* TipsCollectionViewCell.swift in Sources */,
+				0CC493B42077477200909E19 /* OtherStatsTableViewCell.swift in Sources */,
 				0CF4E4FF207352FF00ACD2C9 /* BMIHistoryCell.swift in Sources */,
 				0CCE3F8A20764F2C006FEF32 /* ShareBarCell.swift in Sources */,
 				0CF4E5082073653100ACD2C9 /* AppFonts.swift in Sources */,
@@ -399,8 +473,10 @@
 				0CCE3F6A207609AE006FEF32 /* BMIResultFirstCell.swift in Sources */,
 				0CCE3F8320763AFA006FEF32 /* SectionsHeaderCell.swift in Sources */,
 				0CF4E4EA207348AC00ACD2C9 /* BMIHistoryVC.swift in Sources */,
+				0CC493B7207756C100909E19 /* ResultBMIVC.swift in Sources */,
 				0CF4E4E8207348AC00ACD2C9 /* AppDelegate.swift in Sources */,
 				0CCA09EB2074BA93008981AE /* OtherStatsCell.swift in Sources */,
+				0CC493BF207776BB00909E19 /* ResultBodyFat.swift in Sources */,
 				0CCA09E12074A67B008981AE /* ResultPreviewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

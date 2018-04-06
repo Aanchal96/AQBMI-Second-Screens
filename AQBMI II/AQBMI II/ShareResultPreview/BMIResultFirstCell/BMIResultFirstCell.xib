@@ -17,20 +17,17 @@
             <rect key="frame" x="0.0" y="0.0" width="398" height="140"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMV-75-9Pf">
-                    <rect key="frame" x="15" y="15" width="14" height="14"/>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMV-75-9Pf">
+                    <rect key="frame" x="15" y="15" width="40" height="40"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="14" id="1dA-sV-jx6"/>
-                        <constraint firstAttribute="width" constant="14" id="5PM-cO-Q1K"/>
+                        <constraint firstAttribute="height" constant="40" id="1dA-sV-jx6"/>
+                        <constraint firstAttribute="width" constant="40" id="5PM-cO-Q1K"/>
                     </constraints>
-                    <state key="normal" image="cross-512"/>
-                    <connections>
-                        <action selector="crossBtn:" destination="lP7-ZJ-XU5" eventType="touchUpInside" id="fDD-5c-rqw"/>
-                    </connections>
+                    <state key="normal" image="icShareClose"/>
                 </button>
                 <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogo" translatesAutoresizingMaskIntoConstraints="NO" id="W3f-76-kvu">
-                    <rect key="frame" x="136" y="57.5" width="126" height="55"/>
+                    <rect key="frame" x="136" y="42.5" width="126" height="55"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
             </subviews>
@@ -38,7 +35,7 @@
             <constraints>
                 <constraint firstItem="W3f-76-kvu" firstAttribute="height" secondItem="lP7-ZJ-XU5" secondAttribute="height" multiplier="50/128" id="6Uf-J3-NEf"/>
                 <constraint firstItem="pMV-75-9Pf" firstAttribute="top" secondItem="qws-Ye-tkQ" secondAttribute="top" constant="15" id="TVE-eH-Zdq"/>
-                <constraint firstItem="W3f-76-kvu" firstAttribute="centerY" secondItem="lP7-ZJ-XU5" secondAttribute="centerY" constant="15" id="Vez-GQ-MW2"/>
+                <constraint firstItem="W3f-76-kvu" firstAttribute="centerY" secondItem="lP7-ZJ-XU5" secondAttribute="centerY" id="Vez-GQ-MW2"/>
                 <constraint firstItem="W3f-76-kvu" firstAttribute="centerX" secondItem="lP7-ZJ-XU5" secondAttribute="centerX" id="irZ-qH-Jl8"/>
                 <constraint firstItem="W3f-76-kvu" firstAttribute="width" secondItem="lP7-ZJ-XU5" secondAttribute="width" multiplier="119/375" id="kKz-Dy-I9A"/>
                 <constraint firstItem="pMV-75-9Pf" firstAttribute="leading" secondItem="qws-Ye-tkQ" secondAttribute="leading" constant="15" id="nDF-n0-fqc"/>
@@ -53,7 +50,7 @@
         </view>
     </objects>
     <resources>
-        <image name="cross-512" width="512" height="512"/>
         <image name="icLogo" width="226" height="109"/>
+        <image name="icShareClose" width="20" height="20"/>
     </resources>
 </document>

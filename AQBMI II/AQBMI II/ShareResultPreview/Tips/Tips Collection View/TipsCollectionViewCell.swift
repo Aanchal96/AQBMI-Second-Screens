@@ -31,9 +31,11 @@ class TipsCollectionViewCell: UICollectionViewCell {
 extension TipsCollectionViewCell{
     
     //MARK:--> Register Nibs
+    //======================
     func registerNib(){
         self.tipsInnerTableView.register(UINib(nibName: "TipsInnerTableViewCell", bundle: nil), forCellReuseIdentifier: "TipsInnerTableViewCellID")
     }
+    
     //MARK:--> Layouts
     //================
     func setlayouts(){
@@ -42,11 +44,11 @@ extension TipsCollectionViewCell{
         self.backgroundView?.clipsToBounds = true
     }
     func populateData(index : IndexPath) {
-        
     }
 }
 
-//Table View Methods
+//MARK:--> Table View Methods
+//===========================
 extension TipsCollectionViewCell: UITableViewDataSource,UITableViewDelegate{
     func setTable(){
         self.tipsInnerTableView.dataSource = self

@@ -6,17 +6,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icLogo.jpg",
+      "filename" : "icLogo.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icLogo@2x.jpg",
+      "filename" : "icLogo@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icLogo@3x.jpg",
+      "filename" : "icLogo@3x.png",
       "scale" : "3x"
     }
   ]

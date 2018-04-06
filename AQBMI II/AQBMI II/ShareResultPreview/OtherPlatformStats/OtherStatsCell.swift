@@ -14,20 +14,14 @@ class OtherStatsCell: UITableViewCell {
     //==================
     @IBOutlet weak var otherStatsCellView: UIView!
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var bMILabel: UILabel!
-    @IBOutlet weak var bMIFirstValLabel: UILabel!
-    @IBOutlet weak var bMISecondValLabel: UILabel!
-    @IBOutlet weak var bMIThirdValLabel: UILabel!
-    @IBOutlet weak var bodyFatLabel: UILabel!
-    @IBOutlet weak var bodyFatFirstValLabel: UILabel!
-    @IBOutlet weak var bodyFatSecondValLabel: UILabel!
-    @IBOutlet weak var bodyFatThirdValLabel: UILabel!
-    
+    @IBOutlet weak var otherStatsTableView: UITableView!
     
     //MARK:--> Cell life cycle
     //========================
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.registerNib()
+        self.setTable()
     }
     
     override func layoutSubviews() {
@@ -41,29 +35,47 @@ class OtherStatsCell: UITableViewCell {
 
 extension OtherStatsCell{
     
+    //MARK:--> Register Nibs
+    //======================
+    func registerNib(){
+        self.otherStatsTableView.register(UINib(nibName: "OtherStatsTableViewCell", bundle: nil), forCellReuseIdentifier: "OtherStatsTableViewCellID")
+    }
+    
     //MARK:--> Layouts
     //================
     func setlayouts(){
         self.containerView.layer.cornerRadius = CGFloat(CornerRadius().corner)
         self.containerView.backgroundColor = AppColors.darkGreyThreeColor
-        self.bMILabel.font = AppFonts.Poppins_Regular.withSize(14.0)
-        self.bMILabel.textColor = AppColors.coolGreyTwoColor
-        self.bMIFirstValLabel.font = AppFonts.Poppins_Regular.withSize(14.0)
-        self.bMIFirstValLabel.textColor = AppColors.coolGreyTwoColor
-        self.bMISecondValLabel.font = AppFonts.Poppins_Regular.withSize(14.0)
-        self.bMISecondValLabel.textColor = AppColors.coolGreyTwoColor
-        self.bMIThirdValLabel.font = AppFonts.Poppins_Regular.withSize(14.0)
-        self.bMIThirdValLabel.textColor = AppColors.coolGreyTwoColor
-        self.bodyFatLabel.font = AppFonts.Poppins_Regular.withSize(14.0)
-        self.bodyFatLabel.textColor = AppColors.coolGreyTwoColor
-        self.bodyFatFirstValLabel.font = AppFonts.Poppins_Regular.withSize(14.0)
-        self.bodyFatFirstValLabel.textColor = AppColors.coolGreyTwoColor
-        self.bodyFatSecondValLabel.font = AppFonts.Poppins_Regular.withSize(14.0)
-        self.bodyFatSecondValLabel.textColor = AppColors.coolGreyTwoColor
-        self.bodyFatThirdValLabel.font = AppFonts.Poppins_Regular.withSize(14.0)
-        self.bodyFatThirdValLabel.textColor = AppColors.coolGreyTwoColor
     }
+    
     func populateData(index : IndexPath) {
-        
+    }
+}
+
+//MARK:--> Table View Methods
+//===========================
+extension OtherStatsCell: UITableViewDataSource,UITableViewDelegate{
+    func setTable(){
+        self.otherStatsTableView.dataSource = self
+        self.otherStatsTableView.delegate = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.otherStatsTableView.dequeueReusableCell(withIdentifier: "OtherStatsTableViewCellID", for: indexPath) as! OtherStatsTableViewCell
+        cell.populateData(index: indexPath.row)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0{
+          return 50
+        }
+        else{
+          return 30
+        }
     }
 }

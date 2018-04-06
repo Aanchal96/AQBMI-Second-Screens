@@ -18,7 +18,6 @@ class SectionsHeaderCell: UITableViewHeaderFooterView {
     
     //MARK:--> IBOutlets
     //==================
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var checkBtn: UIButton!
@@ -28,11 +27,11 @@ class SectionsHeaderCell: UITableViewHeaderFooterView {
     @IBAction func checkBtn(_ sender: UIButton) {
         //check = !check
         if !check{
-            sender.setImage(UIImage(named:"check.png"), for: .normal)
+            sender.setImage(UIImage(named:"icShareCheck.png"), for: .normal)
             check = true
         }
         else{
-            sender.setImage(nil, for: .normal)
+            sender.setImage(UIImage(named:"icShareUncheck.png"), for: .normal)
             check = false
         }
     }
@@ -58,9 +57,9 @@ extension SectionsHeaderCell{
         self.titleLabel.textColor = AppColors.coolGreyTwoColor
         self.descriptionLabel.font = AppFonts.Poppins_Regular.withSize(10)
         self.descriptionLabel.textColor = AppColors.battleshipGreyTwoColor
-        self.checkBtn.layer.borderWidth = 2
-        self.checkBtn.layer.borderColor = UIColor.gray.cgColor
-        self.checkBtn.layer.cornerRadius = CGFloat(CornerRadius().corner)
+        //self.checkBtn.layer.borderWidth = 2
+        //self.checkBtn.layer.borderColor = UIColor.gray.cgColor
+        //self.checkBtn.layer.cornerRadius = CGFloat(CornerRadius().corner)
     }
     func populateData(index : Int) {
         self.titleLabel.text = titles[index-1]

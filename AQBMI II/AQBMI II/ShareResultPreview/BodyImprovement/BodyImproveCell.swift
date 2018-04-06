@@ -16,7 +16,6 @@ class BodyImproveCell: UITableViewCell {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var linkLabel: UILabel!
     
-    
     //MARK:--> Cell life cycle
     //========================
     override func awakeFromNib() {
@@ -44,7 +43,5 @@ extension BodyImproveCell{
     }
     
     func populateData(index : IndexPath) {
-        
     }
 }
-

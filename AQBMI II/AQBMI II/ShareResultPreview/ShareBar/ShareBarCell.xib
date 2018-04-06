@@ -25,9 +25,6 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Share"/>
-                    <connections>
-                        <action selector="shareBtn:" destination="kwk-TC-nPe" eventType="touchUpInside" id="gQZ-JE-qep"/>
-                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
