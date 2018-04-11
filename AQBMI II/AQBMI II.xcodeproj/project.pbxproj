@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C015B2A207B744300B4A164 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C015B29207B744200B4A164 /* StringConstants.swift */; };
+		0C015B30207B882000B4A164 /* SurveyAnswersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C015B2F207B882000B4A164 /* SurveyAnswersVC.swift */; };
+		0CB8AF74207C900D0009D358 /* HistoryScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8AF73207C900D0009D358 /* HistoryScrollVC.swift */; };
+		0CC12D74207B93BD009D1892 /* SurveyAnswersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC12D73207B93BD009D1892 /* SurveyAnswersCell.swift */; };
+		0CC12D78207BAC4F009D1892 /* ProfilePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC12D77207BAC4F009D1892 /* ProfilePopUpVC.swift */; };
 		0CC493B42077477200909E19 /* OtherStatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC493B22077477200909E19 /* OtherStatsTableViewCell.swift */; };
 		0CC493B52077477200909E19 /* OtherStatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC493B32077477200909E19 /* OtherStatsTableViewCell.xib */; };
 		0CC493B7207756C100909E19 /* ResultBMIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC493B6207756C100909E19 /* ResultBMIVC.swift */; };
@@ -54,6 +59,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C015B29207B744200B4A164 /* StringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringConstants.swift; path = ../../../../../../Downloads/StringConstants.swift; sourceTree = "<group>"; };
+		0C015B2F207B882000B4A164 /* SurveyAnswersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAnswersVC.swift; sourceTree = "<group>"; };
+		0CB8AF73207C900D0009D358 /* HistoryScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScrollVC.swift; sourceTree = "<group>"; };
+		0CC12D73207B93BD009D1892 /* SurveyAnswersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAnswersCell.swift; sourceTree = "<group>"; };
+		0CC12D77207BAC4F009D1892 /* ProfilePopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePopUpVC.swift; sourceTree = "<group>"; };
 		0CC493B22077477200909E19 /* OtherStatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherStatsTableViewCell.swift; sourceTree = "<group>"; };
 		0CC493B32077477200909E19 /* OtherStatsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherStatsTableViewCell.xib; sourceTree = "<group>"; };
 		0CC493B6207756C100909E19 /* ResultBMIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIVC.swift; sourceTree = "<group>"; };
@@ -113,6 +123,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CC12D75207B97E5009D1892 /* SurveyAnswers */ = {
+			isa = PBXGroup;
+			children = (
+				0CC12D76207B97F7009D1892 /* Survey Answers Cell */,
+			);
+			path = SurveyAnswers;
+			sourceTree = "<group>";
+		};
+		0CC12D76207B97F7009D1892 /* Survey Answers Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0CC12D73207B93BD009D1892 /* SurveyAnswersCell.swift */,
+			);
+			path = "Survey Answers Cell";
+			sourceTree = "<group>";
+		};
 		0CC493B12077474800909E19 /* OtherStatsTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +334,7 @@
 				0CF4E51220739DC500ACD2C9 /* SurveyHistory */,
 				0CCA09F12074BC8D008981AE /* ShareResultPreview */,
 				0CC493B92077761300909E19 /* ResultBMI */,
+				0CC12D75207B97E5009D1892 /* SurveyAnswers */,
 				0CF4E501207356D000ACD2C9 /* Controllers */,
 				0CF4E50920736FFA00ACD2C9 /* View */,
 				0CC493B8207756DA00909E19 /* Formats */,
@@ -335,6 +362,9 @@
 				0CF4E51020739CF900ACD2C9 /* SurveyHistoryVC.swift */,
 				0CCA09E02074A67B008981AE /* ResultPreviewVC.swift */,
 				0CC493B6207756C100909E19 /* ResultBMIVC.swift */,
+				0CC12D77207BAC4F009D1892 /* ProfilePopUpVC.swift */,
+				0C015B2F207B882000B4A164 /* SurveyAnswersVC.swift */,
+				0CB8AF73207C900D0009D358 /* HistoryScrollVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -342,6 +372,7 @@
 		0CF4E5022073651000ACD2C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0C015B29207B744200B4A164 /* StringConstants.swift */,
 				0CF4E5032073653100ACD2C9 /* CornerRadius.swift */,
 				0CCA09DE20749FA8008981AE /* ScreenSize.swift */,
 			);
@@ -453,9 +484,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB8AF74207C900D0009D358 /* HistoryScrollVC.swift in Sources */,
 				0CCA09F82074BDF5008981AE /* BodyImproveCell.swift in Sources */,
 				0CCE3F722076225E006FEF32 /* TipsCell.swift in Sources */,
 				0CC493BD207776AD00909E19 /* ResultBMI.swift in Sources */,
+				0CC12D74207B93BD009D1892 /* SurveyAnswersCell.swift in Sources */,
 				0CCE3F7B20763362006FEF32 /* TipsInnerTableViewCell.swift in Sources */,
 				0CCA09DF20749FA8008981AE /* ScreenSize.swift in Sources */,
 				0CCA09E72074BA3A008981AE /* BMIResultCell.swift in Sources */,
@@ -467,9 +500,11 @@
 				0CF4E4FF207352FF00ACD2C9 /* BMIHistoryCell.swift in Sources */,
 				0CCE3F8A20764F2C006FEF32 /* ShareBarCell.swift in Sources */,
 				0CF4E5082073653100ACD2C9 /* AppFonts.swift in Sources */,
+				0C015B2A207B744300B4A164 /* StringConstants.swift in Sources */,
 				0CF4E5062073653100ACD2C9 /* CornerRadius.swift in Sources */,
 				0CF4E51420739E8B00ACD2C9 /* SurveyHistoryCell.swift in Sources */,
 				0CF4E5072073653100ACD2C9 /* AppColors.swift in Sources */,
+				0C015B30207B882000B4A164 /* SurveyAnswersVC.swift in Sources */,
 				0CCE3F6A207609AE006FEF32 /* BMIResultFirstCell.swift in Sources */,
 				0CCE3F8320763AFA006FEF32 /* SectionsHeaderCell.swift in Sources */,
 				0CF4E4EA207348AC00ACD2C9 /* BMIHistoryVC.swift in Sources */,
@@ -477,6 +512,7 @@
 				0CF4E4E8207348AC00ACD2C9 /* AppDelegate.swift in Sources */,
 				0CCA09EB2074BA93008981AE /* OtherStatsCell.swift in Sources */,
 				0CC493BF207776BB00909E19 /* ResultBodyFat.swift in Sources */,
+				0CC12D78207BAC4F009D1892 /* ProfilePopUpVC.swift in Sources */,
 				0CCA09E12074A67B008981AE /* ResultPreviewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

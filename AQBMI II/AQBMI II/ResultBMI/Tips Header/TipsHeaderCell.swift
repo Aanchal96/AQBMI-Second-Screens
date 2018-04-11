@@ -35,5 +35,6 @@ extension TipsHeaderCell{
         self.tipsImageView.layer.cornerRadius = (self.tipsImageView.bounds.height)/2
         self.tipsLabel.font = AppFonts.Poppins_Regular.withSize(13.0)
         self.tipsLabel.textColor = AppColors.coolGreyTwoColor
+        self.tipsLabel.text = StringConstants.K_Tips
     }
 }

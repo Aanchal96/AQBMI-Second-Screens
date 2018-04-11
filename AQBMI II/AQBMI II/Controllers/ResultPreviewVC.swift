@@ -23,17 +23,21 @@ class ResultPreviewVC: UIViewController {
         self.setTable()
     }
     
-    override func viewDidLayoutSubviews() {
-        self.setLayout()
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     override var preferredStatusBarStyle : UIStatusBarStyle {
-                let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
-                statusBarView.backgroundColor = AppColors.darkGreyFourColor
-                view.addSubview(statusBarView)
+        let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
+        statusBarView.backgroundColor = AppColors.darkGreyFourColor
+        view.addSubview(statusBarView)
         return UIStatusBarStyle.lightContent
     }
     
+    override func viewDidLayoutSubviews() {
+        self.setLayout()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

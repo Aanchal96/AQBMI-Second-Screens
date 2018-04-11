@@ -13,15 +13,7 @@ class BMIHistoryVC: UIViewController {
     //MARK:--> IBOutlets
     //==================
     @IBOutlet var bMIHistoryVCView: UIView!
-    @IBOutlet weak var navView: UIView!
-    @IBOutlet weak var backBtn: UIButton!
-    @IBOutlet weak var navImageView: UIImageView!
     @IBOutlet weak var bMIHistoryTableView: UITableView!
-    
-    //MARK:--> IBActions
-    //==================
-    @IBAction func backBtn(_ sender: Any) {
-    }
     
     //MARK:--> VC life cycle
     //======================
@@ -64,7 +56,7 @@ extension BMIHistoryVC: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

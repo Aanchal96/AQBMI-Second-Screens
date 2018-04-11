@@ -26,7 +26,7 @@ class ShareBarCell: UITableViewHeaderFooterView {
     
     override func layoutSubviews() {
         self.backgroundView?.backgroundColor = AppColors.darkGreyFourColor
-
+        
     }
 }
 
@@ -37,5 +37,6 @@ extension ShareBarCell{
     func setlayouts(){
         self.shareBtn.titleLabel?.font = AppFonts.Poppins_Regular.withSize(17.0)
         self.shareBtn.setTitleColor(AppColors.themeDarkSkyBlueColor, for: .normal)
+        self.shareBtn.titleLabel?.text = StringConstants.K_Share
     }
 }

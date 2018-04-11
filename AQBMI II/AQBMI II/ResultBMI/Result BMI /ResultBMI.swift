@@ -41,6 +41,7 @@ class ResultBMI: UITableViewCell {
     //========================
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.setTexts()
     }
     
     override func layoutSubviews() {
@@ -54,6 +55,12 @@ class ResultBMI: UITableViewCell {
 
 extension ResultBMI{
     
+    func setTexts(){
+        self.underweightLabel.text = StringConstants.K_Underweight
+        self.healthyLabel.text = StringConstants.K_Healthy
+        self.overweightLabel.text = StringConstants.K_Overweight
+        self.obeseLabel.text = StringConstants.K_Obese
+    }
     //MARK:--> Layouts
     //================
     func setlayouts(){

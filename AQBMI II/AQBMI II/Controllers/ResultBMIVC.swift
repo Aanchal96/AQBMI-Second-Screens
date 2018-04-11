@@ -41,9 +41,13 @@ class ResultBMIVC: UIViewController {
         self.setLayout()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override var preferredStatusBarStyle : UIStatusBarStyle {
         let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
-        statusBarView.backgroundColor = AppColors.darkGreyThreeColor
+        statusBarView.backgroundColor = AppColors.themeBlackColor
         view.addSubview(statusBarView)
         return UIStatusBarStyle.lightContent
     }
@@ -69,6 +73,7 @@ extension ResultBMIVC{
         self.resultBMINavView.backgroundColor = AppColors.darkGreyThreeColor
         self.navTitleLabel.font = AppFonts.Poppins_Medium.withSize(16.0)
         self.navTitleLabel.textColor = AppColors.whiteColor
+        self.navTitleLabel.text = StringConstants.K_BMI_Result
     }
 }
 
@@ -129,6 +134,7 @@ extension ResultBMIVC: UITableViewDataSource,UITableViewDelegate{
         
     }
     
+    //Header methods
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0{
             return UITableViewCell()
@@ -145,6 +151,26 @@ extension ResultBMIVC: UITableViewDataSource,UITableViewDelegate{
         }
         else{
             return 52.0
+        }
+    }
+    
+    //Footer methods
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        if section == 1{
+            let footer = UITableViewCell()
+            footer.backgroundColor = .clear
+            return footer
+        }
+        else{
+            return UITableViewCell()
+        }
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if section == 1{
+            return 15
+        }
+        else{
+            return 0.001
         }
     }
 }

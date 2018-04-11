@@ -46,7 +46,7 @@
                 <outlet property="crossBtn" destination="pMV-75-9Pf" id="bfL-e1-2Nt"/>
                 <outlet property="logoImageView" destination="W3f-76-kvu" id="xEY-jx-I80"/>
             </connections>
-            <point key="canvasLocation" x="-5" y="480"/>
+            <point key="canvasLocation" x="90" y="-507"/>
         </view>
     </objects>
     <resources>

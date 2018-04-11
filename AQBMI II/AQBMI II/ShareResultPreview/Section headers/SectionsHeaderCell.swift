@@ -12,8 +12,7 @@ class SectionsHeaderCell: UITableViewHeaderFooterView {
     
     //MARK:--> Variable declaration
     //=============================
-    let titles = ["BMI+ RESULT","OTHER PLATFORM STATISTICS","TIPS","BODY IMPROVEMENT"]
-    let descriptions = ["Tap on checkbox for allow to share.","Tap on checkbox for allow to share.","Tap on checkbox for allow to share.","Tap on checkbox for allow to share."]
+    let titles = ["\(StringConstants.K_BMI_Result)","\(StringConstants.K_Other_Platform_Statistics)","\(StringConstants.K_Tips)","\(StringConstants.K_Body_Improvement)"]
     var check = false
     
     //MARK:--> IBOutlets
@@ -41,6 +40,7 @@ class SectionsHeaderCell: UITableViewHeaderFooterView {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.setlayouts()
+        setTexts()
     }
     
     override func layoutSubviews() {
@@ -49,6 +49,12 @@ class SectionsHeaderCell: UITableViewHeaderFooterView {
 }
 
 extension SectionsHeaderCell{
+    //MARK:--> Texts
+    //================
+    func setTexts(){
+        self.titleLabel.text = StringConstants.K_BMI_Result
+        self.descriptionLabel.text = StringConstants.K_Tap_on_checkbox_to_allow_to_share
+    }
     
     //MARK:--> Layouts
     //================
@@ -57,12 +63,10 @@ extension SectionsHeaderCell{
         self.titleLabel.textColor = AppColors.coolGreyTwoColor
         self.descriptionLabel.font = AppFonts.Poppins_Regular.withSize(10)
         self.descriptionLabel.textColor = AppColors.battleshipGreyTwoColor
-        //self.checkBtn.layer.borderWidth = 2
-        //self.checkBtn.layer.borderColor = UIColor.gray.cgColor
-        //self.checkBtn.layer.cornerRadius = CGFloat(CornerRadius().corner)
     }
+    
     func populateData(index : Int) {
         self.titleLabel.text = titles[index-1]
-        self.descriptionLabel.text = descriptions[index-1]
+        self.descriptionLabel.text = StringConstants.K_Tap_on_checkbox_to_allow_to_share
     }
 }

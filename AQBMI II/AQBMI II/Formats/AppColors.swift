@@ -13,7 +13,7 @@ struct AppColors {
     
     static let themeBlackColor = UIColor.init(red: 14/255, green: 21/255, blue: 25/255, alpha: 1)
     static let themeDarkSkyBlueColor = UIColor.init(red: 36/255, green: 160/255, blue: 214/255, alpha: 1)
-    static let battleshipGreyColor = UIColor.init(red: 106/265, green: 160/255, blue: 124/255, alpha: 1)
+    static let battleshipGreyColor = UIColor.init(red: 106/265, green: 118/255, blue: 124/255, alpha: 1)
     static let whiteColor = UIColor.init(red: 254/255, green: 254/255, blue: 254/255, alpha: 1)
     static let whiteTwoColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.2)
     static let coolGreyColor = UIColor.init(red: 165/255, green: 169/255, blue: 172/255, alpha: 1)

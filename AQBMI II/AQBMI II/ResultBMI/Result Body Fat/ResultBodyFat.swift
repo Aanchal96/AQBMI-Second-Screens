@@ -42,6 +42,7 @@ class ResultBodyFat: UITableViewCell {
     //========================
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.setTexts()
     }
     
     override func layoutSubviews() {
@@ -54,6 +55,14 @@ class ResultBodyFat: UITableViewCell {
 }
 
 extension ResultBodyFat{
+    
+    func setTexts(){
+        self.essentialLabel.text = StringConstants.K_Essential_Fat
+        self.atheletesLabel.text = StringConstants.K_Athletes
+        self.fitnessLabel.text = StringConstants.K_Fitness
+        self.acceptLabel.text = StringConstants.K_Acceptable
+        self.obeseLabel.text = StringConstants.K_Obese
+    }
     
     //MARK:--> Layouts
     //================

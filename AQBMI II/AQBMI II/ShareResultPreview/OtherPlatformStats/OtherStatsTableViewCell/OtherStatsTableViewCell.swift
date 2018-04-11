@@ -9,11 +9,6 @@
 import UIKit
 
 class OtherStatsTableViewCell: UITableViewCell {
-
-    //MARK:--> Variable declaration
-    //=============================
-    let bMI = ["BMI","21","21","21"]
-    let bodyFat = ["Body Fat %","14","14","14"]
     
     //MARK:--> IBOutlets
     //==================
@@ -25,7 +20,7 @@ class OtherStatsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func layoutSubviews() {
         self.setlayouts()
     }
@@ -47,7 +42,5 @@ extension OtherStatsTableViewCell{
     }
     
     func populateData(index : Int) {
-        self.bMILabel.text = bMI[index]
-        self.bodyFatLabel.text = bodyFat[index]
     }
 }

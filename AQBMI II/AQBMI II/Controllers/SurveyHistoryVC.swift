@@ -13,15 +13,7 @@ class SurveyHistoryVC: UIViewController {
     //MARK:--> IBOutlets
     //==================
     @IBOutlet var surveyHistoryVCView: UIView!
-    @IBOutlet weak var navView: UIView!
-    @IBOutlet weak var backBtn: UIButton!
-    @IBOutlet weak var navImageView: UIImageView!
     @IBOutlet weak var surveyHistoryTableView: UITableView!
-    
-    //MARK:--> IBActions
-    //==================
-    @IBAction func backBtn(_ sender: Any) {
-    }
     
     //MARK:--> VC life cycle
     //======================
@@ -57,7 +49,7 @@ extension SurveyHistoryVC: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -68,5 +60,10 @@ extension SurveyHistoryVC: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SurveyAnswersID") as! SurveyAnswersVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -31,6 +31,7 @@ class BMIResultCell: UITableViewCell {
     
     override func layoutSubviews() {
         self.setlayouts()
+        self.setTexts()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -39,6 +40,11 @@ class BMIResultCell: UITableViewCell {
 }
 
 extension BMIResultCell{
+    
+    func setTexts(){
+        self.bMILabel.text = StringConstants.K_BMI
+        self.bodyFatLabel.text = StringConstants.K_Body_fat
+    }
     
     //MARK:--> Layouts
     //================

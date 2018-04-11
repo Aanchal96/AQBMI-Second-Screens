@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,14 +20,32 @@
                 <rect key="frame" x="0.0" y="0.0" width="438" height="139.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApF-h6-tJR" userLabel="HistoryCellView">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApF-h6-tJR" userLabel="Container View">
                         <rect key="frame" x="15" y="7.5" width="408" height="124.5"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OOL-Ok-Pw0">
+                                <rect key="frame" x="25" y="14.5" width="127.5" height="18"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icViewStatesTime" translatesAutoresizingMaskIntoConstraints="NO" id="XCT-8Z-NE7">
+                                        <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="Xlq-43-Ndd"/>
+                                            <constraint firstAttribute="height" constant="18" id="sO4-To-PY7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 Jan 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7Z-an-dOw">
+                                        <rect key="frame" x="33" y="0.0" width="94.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user image" translatesAutoresizingMaskIntoConstraints="NO" id="ctW-uD-qez">
                                 <rect key="frame" x="353" y="12" width="40" height="40"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="AKY-QD-WIl"/>
                                     <constraint firstAttribute="height" constant="40" id="Msa-aF-zgu"/>
-                                    <constraint firstAttribute="width" secondItem="ctW-uD-qez" secondAttribute="height" multiplier="1:1" id="Tkj-lz-FWy"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-EL-1sl">
@@ -79,24 +96,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OOL-Ok-Pw0">
-                                <rect key="frame" x="25" y="15" width="127.5" height="18"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock image" translatesAutoresizingMaskIntoConstraints="NO" id="XCT-8Z-NE7">
-                                        <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="18" id="Xlq-43-Ndd"/>
-                                            <constraint firstAttribute="height" constant="18" id="sO4-To-PY7"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 Jan 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7Z-an-dOw">
-                                        <rect key="frame" x="33" y="0.0" width="94.5" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -140,11 +139,11 @@
                 <outlet property="bodyFatLabel" destination="fXV-KY-bG0" id="Fgb-lv-ciZ"/>
                 <outlet property="bodyFatValueLabel" destination="yes-mC-pMc" id="EXP-vd-kOC"/>
                 <outlet property="clockImageView" destination="XCT-8Z-NE7" id="OAs-dp-MPg"/>
+                <outlet property="containerView" destination="ApF-h6-tJR" id="07d-GG-ph1"/>
                 <outlet property="dateLabel" destination="P7Z-an-dOw" id="bGo-Q1-NR1"/>
                 <outlet property="dateStackView" destination="OOL-Ok-Pw0" id="vOW-r8-a5i"/>
                 <outlet property="heightLabel" destination="hrd-mg-HU4" id="S3P-4o-kvQ"/>
                 <outlet property="heightValueLabel" destination="pxy-3c-vAe" id="1xo-Jm-lC4"/>
-                <outlet property="historyView" destination="ApF-h6-tJR" id="pIy-h7-poW"/>
                 <outlet property="userImageView" destination="ctW-uD-qez" id="uSU-1Q-2Mu"/>
                 <outlet property="weightLabel" destination="1A3-gB-vh8" id="iWC-L4-OUQ"/>
                 <outlet property="weightValueLabel" destination="PRo-bd-K0P" id="g7u-JD-N9f"/>
@@ -153,7 +152,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="clock image" width="300" height="300"/>
+        <image name="icViewStatesTime" width="20" height="20"/>
         <image name="user image" width="398" height="397"/>
     </resources>
 </document>
